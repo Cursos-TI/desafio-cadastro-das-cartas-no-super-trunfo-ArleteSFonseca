@@ -7,16 +7,47 @@
 //Teste larissa
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
+        char codigo[4];
+        char estado[25];
+        char cidade[25];
+        int populacao;
+        float area;
+        float pib;
+        int qtdptsturisticos;
+
+            printf("Vamos iniciar o cadastro de cartas para o jogo Super Trunfo!\n");
+
+            printf("Informe o código da carta (Estado uma letra e Cidade dois números)\n");
+            scanf("%s", &codigo);
+            
+            printf("Informe o Estado\n");
+            scanf("%s", &estado);
+       
+            printf("Informe o nome da Cidade\n");
+            scanf("%s", &cidade);
+            
+            printf("População da ciadade\n");
+            scanf("%d", &populacao);
+
+            printf("Área da cidade\n");
+            scanf("%f", &area);
+
+            printf("PIB da ciadade\n");
+            scanf("%f", &pib);
+
+            printf("Quantidade de pontos turísticos\n");
+            scanf("%d", &qtdptsturisticos);
+
+                printf("Carta cadastrada com sucesso!\n\n");
+                printf("DADOS DA CARTA CADASTRADA:\n");
+                printf("CÓDIGO DA CARTA: %s\n", codigo);
+                printf("ESTADO: %s\n", estado);
+                printf("CIDADE: %s\n", cidade);
+                printf("POPULAÇÃO: %d\n", populacao);
+                printf("ÁREA: %2.f\n K²", area);
+                printf("PIB: R$ %2.f\n", pib);
+                printf("QUANTIDADE PONTOS TURISTICOS: %d\n\n", qtdptsturisticos);
 
     return 0;
 }
